@@ -55,6 +55,5 @@ public class Channel {
         public Channel toChannel() {
             return new Channel(this.id, this.description);
         }
-
     }
 }
