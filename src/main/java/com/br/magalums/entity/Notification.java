@@ -12,7 +12,7 @@ public class Notification {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long notificationId;
 
-    private LocalDateTime datetime;
+    private LocalDateTime dateTime;
 
     private String destination;
 
@@ -37,7 +37,7 @@ public class Notification {
         this.message = message;
         this.destination = destination;
         this.channel = channel;
-        this.datetime = dateTime;
+        this.dateTime = dateTime;
         this.status = status;
     }
 
@@ -46,11 +46,11 @@ public class Notification {
     }
 
     public LocalDateTime getDatetime() {
-        return datetime;
+        return dateTime;
     }
 
-    public void setDatetime(LocalDateTime datetime) {
-        this.datetime = datetime;
+    public void setDatetime(LocalDateTime dateTime) {
+        this.dateTime = dateTime;
     }
 
     public String getDestination() {
